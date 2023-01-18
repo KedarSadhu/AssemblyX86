@@ -1,0 +1,10 @@
+kedar@Kedar:~/Assembly_Batch6/ToolChain$ cpp Addition.c  -o Addition.i
+
+kedar@Kedar:~/Assembly_Batch6/ToolChain$ cc Addition.i -S  -o Addition.s
+
+kedar@Kedar:~/Assembly_Batch6/ToolChain$ as Addition.s -o Addition.o
+
+kedar@Kedar:~/Assembly_Batch6/ToolChain$ ld Addition.o -lc -dynamic-linker /lib/ld-linux.so.2  -e main -o Addition
+
+kedar@Kedar:~/Assembly_Batch6/ToolChain$ ./Addition 
+
